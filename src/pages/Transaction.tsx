@@ -5,7 +5,7 @@ import { Wrapper} from '../components/Components';
 
 const ID = '39625d42c4da40a9b8e572e29d93d14c'
 
-function Main() {
+function Transaction() {
   const [balance, setBalance] = useState<string>('');
   useEffect(() => {
     (async () => {
@@ -18,8 +18,8 @@ function Main() {
   }, [])
   return (
     <Wrapper>
-      ETH balance <span>{balance}</span>
+      Transaction <span>{balance}</span>
     </Wrapper>
   );
 }
-export default Main;
+export default Transaction;
