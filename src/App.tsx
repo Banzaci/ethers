@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const Main = React.lazy(() =>  import('./pages/Main'));
 const Contract = React.lazy(() =>  import('./pages/Contract'));
+const Transaction = React.lazy(() =>  import('./pages/Transaction'));
 
 const Loader = styled.div`
   display: flex;
@@ -21,7 +22,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route index element={ <Main /> } />
-            <Route path='/next' element={ <Contract /> } />
+            <Route path='/contracts' element={ <Contract /> } />
+            <Route path='/transaction' element={ <Transaction /> } />
           </Routes>
         </BrowserRouter>
       </React.Suspense>

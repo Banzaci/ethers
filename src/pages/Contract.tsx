@@ -39,7 +39,7 @@ function Contract() {
       setName(await contract.name())
       setSymbol(await contract.symbol())
       setSupply(ethers.utils.formatEther(await contract.totalSupply()))
-      // setBalanceOf(await contract.balanceOf('0xd50afa0adb69af25eb66625ce9d842855d6c4072'));
+      // setBalanceOf(await contract.balanceOf('0x28c6c06298d514db089934071355e5743bf21d60'));
     })()
   }, [])
   return (
