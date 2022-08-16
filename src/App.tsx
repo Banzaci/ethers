@@ -22,7 +22,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route index element={ <Main /> } />
-            <Route path='/contracts' element={ <Contract /> } />
+            <Route path='/contract' element={ <Contract /> } />
             <Route path='/transaction' element={ <Transaction /> } />
           </Routes>
         </BrowserRouter>
